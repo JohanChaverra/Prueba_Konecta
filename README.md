@@ -9,3 +9,4 @@ registrados en el sistema.
 # Instalación
 1. En la carpeta C:\xampp\htdocs (o donde tengas esa carpeta) subir la carpeta Prueba_Konecta
 2. Importar en Mysql la bases de datos cafeteria.sql
+3. En el archivo sentencias sql.txt se encuentran las consultas solicitadas por el usuario
