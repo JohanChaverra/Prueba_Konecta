@@ -1,0 +1,9 @@
+--SENTENCIAS SQL
+1. Realizar una consulta que permita conocer cuál es el producto que más stock tiene.
+SELECT MAX(stock) as 'Más Stock' FROM producto
+
+2. Realizar una consulta que permita conocer cuál es el producto más vendido.
+
+SELECT id_prod,producto.nombre, Sum(cantidad) AS total FROM venta INNER JOIN producto ON producto.id=venta.id_prod
+GROUP BY id_prod, producto.nombre
+ORDER BY total DESC LIMIT 1
